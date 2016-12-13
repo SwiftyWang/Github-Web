@@ -21,7 +21,7 @@ public class SplashFragment extends Fragment {
     private EditText editText;
     private View view;
 
-    public void goAction(View view) {
+    public void goAction() {
         if (TextUtils.isEmpty(editText.getText().toString())) {
             Snackbar.make(view, getString(R.string.please_input_username), Snackbar.LENGTH_SHORT).show();
         } else {
@@ -39,6 +39,12 @@ public class SplashFragment extends Fragment {
         super.onCreateView(inflater, container, savedInstanceState);
         view = inflater.inflate(R.layout.fragment_splash, container, false);
         editText = (EditText) view.findViewById(R.id.user_input);
+        view.findViewById(R.id.go).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                goAction();
+            }
+        });
         return view;
     }
 }
