@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "543045063783",
+    "firebase_url": "https://mygithub-ceba0.firebaseio.com",
+    "project_id": "mygithub-ceba0",
+    "storage_bucket": "mygithub-ceba0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:543045063783:android:c51be5a4edaeb9a6",
+        "android_client_info": {
+          "package_name": "com.swifty.mygithub"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "543045063783-1mg61tos2konflfpf84s8f9ghmg57dn0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBErPDr3lufen0eN8VCnJ7_FU2-_XXTnkY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
