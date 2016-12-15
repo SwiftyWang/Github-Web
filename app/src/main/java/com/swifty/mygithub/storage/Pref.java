@@ -1,8 +1,8 @@
-package com.swifty.githubweb.storage;
+package com.swifty.mygithub.storage;
 
 import android.content.SharedPreferences;
 
-import com.swifty.githubweb.MyApplication;
+import com.swifty.mygithub.MyApplication;
 
 /**
  * Created by swifty on 14/12/2016.

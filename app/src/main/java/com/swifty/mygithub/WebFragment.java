@@ -1,4 +1,4 @@
-package com.swifty.githubweb;
+package com.swifty.mygithub;
 
 import android.app.Fragment;
 import android.content.Intent;
@@ -9,7 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.swifty.githubweb.storage.Pref;
+import com.swifty.mygithub.storage.Pref;
 
 import im.delight.android.webview.AdvancedWebView;
 

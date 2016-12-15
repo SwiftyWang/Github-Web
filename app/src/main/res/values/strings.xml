@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">githubweb</string>
+    <string name="app_name">MyGithub</string>
     <string name="go">go</string>
     <string name="your_username">Your Github Account Name</string>
     <string name="please_input_username">Please input username.</string>

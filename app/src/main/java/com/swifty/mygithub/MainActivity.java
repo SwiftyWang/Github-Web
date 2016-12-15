@@ -1,11 +1,11 @@
-package com.swifty.githubweb;
+package com.swifty.mygithub;
 
 import android.app.Fragment;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
 
-import com.swifty.githubweb.storage.Pref;
+import com.swifty.mygithub.storage.Pref;
 
 public class MainActivity extends AppCompatActivity {
 

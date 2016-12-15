@@ -1,4 +1,4 @@
-package com.swifty.githubweb;
+package com.swifty.mygithub;
 
 import android.app.Fragment;
 import android.os.Bundle;
@@ -10,7 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
 
-import com.swifty.githubweb.storage.Pref;
+import com.swifty.mygithub.storage.Pref;
 
 /**
  * Created by swifty on 14/12/2016.
