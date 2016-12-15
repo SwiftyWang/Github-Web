@@ -9,7 +9,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.InterstitialAd;
 import com.google.android.gms.ads.NativeExpressAdView;
 import com.swifty.mygithub.storage.Pref;
 
@@ -21,6 +23,7 @@ import im.delight.android.webview.AdvancedWebView;
 
 public class WebFragment extends Fragment implements AdvancedWebView.Listener, IBackableFragment {
 
+    private InterstitialAd mInterstitialAd;
     private AdvancedWebView mWebView;
     private View progress;
 
@@ -57,6 +60,10 @@ public class WebFragment extends Fragment implements AdvancedWebView.Listener, I
         mWebView.setListener(this, this);
         progress = view.findViewById(R.id.progress);
         initAds(view);
+        if (!Pref.getInstance().isFirstTime()) {
+            showFullScreenAds();
+        }
+        Pref.getInstance().setIsFirstTime(false);
         return view;
     }
 
@@ -101,5 +108,25 @@ public class WebFragment extends Fragment implements AdvancedWebView.Listener, I
     public void onResume() {
         super.onResume();
         mWebView.onResume();
+    }
+
+    private void requestNewInterstitial() {
+        AdRequest adRequest = new AdRequest.Builder()
+                .addTestDevice(APIClass.MEIZU_DEVICE_ID)
+                .build();
+
+        mInterstitialAd.loadAd(adRequest);
+    }
+
+    private void showFullScreenAds() {
+        mInterstitialAd = new InterstitialAd(getActivity());
+        mInterstitialAd.setAdUnitId(getString(R.string.full_screen_ads_id));
+        mInterstitialAd.setAdListener(new AdListener() {
+            @Override
+            public void onAdLoaded() {
+                mInterstitialAd.show();
+            }
+        });
+        requestNewInterstitial();
     }
 }

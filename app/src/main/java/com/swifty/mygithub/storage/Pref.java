@@ -9,6 +9,7 @@ import com.swifty.mygithub.MyApplication;
  */
 
 public class Pref {
+    private static final String PREF_IS_FIRST_TIME = "PREF_IS_FIRST_TIME";
     private static final String PREF_USERNAME = "PREF_USERNAME";
 
     private static Pref pref = new Pref();
@@ -30,11 +31,19 @@ public class Pref {
         return sharedPreferences.getString(PREF_USERNAME, "");
     }
 
+    public boolean isFirstTime() {
+        return sharedPreferences.getBoolean(PREF_IS_FIRST_TIME, true);
+    }
+
     public void putString(String key, String value) {
         sharedPreferences.edit().putString(key, value).apply();
     }
 
     public void putUserName(String value) {
         sharedPreferences.edit().putString(PREF_USERNAME, value).apply();
+    }
+
+    public void setIsFirstTime(boolean isFirstTime) {
+        sharedPreferences.edit().putBoolean(PREF_IS_FIRST_TIME, isFirstTime).apply();
     }
 }
