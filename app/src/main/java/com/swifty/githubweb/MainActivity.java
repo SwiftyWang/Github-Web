@@ -1,11 +1,9 @@
 package com.swifty.githubweb;
 
 import android.app.Fragment;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
-import android.view.View;
-import android.webkit.WebView;
 
 import com.swifty.githubweb.storage.Pref;
 
@@ -30,5 +28,17 @@ public class MainActivity extends AppCompatActivity {
         } else {
             addWebFragment();
         }
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Fragment fragment = getFragmentManager().findFragmentById(R.id.container);
+        if (fragment instanceof IBackableFragment) {
+            if (((IBackableFragment) fragment).onBackPressed()) {
+                return;
+            }
+        }
+        super.onBackPressed();
     }
 }
