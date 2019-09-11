@@ -25,15 +25,43 @@
         }
       ],
       "services": {
-        "analytics_service": {
-          "status": 1
-        },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
-        },
-        "ads_service": {
-          "status": 2
+          "other_platform_oauth_client": [
+            {
+              "client_id": "543045063783-1mg61tos2konflfpf84s8f9ghmg57dn0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      },
+      "admob_app_id": "ca-app-pub-7379141907336355~1948493423"
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:543045063783:android:96734a4b7f5e62e22eb0c2",
+        "android_client_info": {
+          "package_name": "com.swifty.mygithub2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "543045063783-1mg61tos2konflfpf84s8f9ghmg57dn0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBErPDr3lufen0eN8VCnJ7_FU2-_XXTnkY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "543045063783-1mg61tos2konflfpf84s8f9ghmg57dn0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }
