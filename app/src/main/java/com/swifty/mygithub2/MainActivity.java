@@ -1,4 +1,4 @@
-package com.swifty.mygithub;
+package com.swifty.mygithub2;
 
 import android.app.Fragment;
 import android.os.Bundle;
@@ -7,7 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
 import android.widget.Toast;
 
-import com.swifty.mygithub.storage.Pref;
+import com.swifty.mygithub2.storage.Pref;
 
 public class MainActivity extends AppCompatActivity {
     boolean doubleBackToExitPressedOnce = false;

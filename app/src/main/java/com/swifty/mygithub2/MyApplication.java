@@ -1,4 +1,4 @@
-package com.swifty.mygithub;
+package com.swifty.mygithub2;
 
 import android.app.Application;
 

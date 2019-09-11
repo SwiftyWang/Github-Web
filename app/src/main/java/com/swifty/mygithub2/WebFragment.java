@@ -1,4 +1,4 @@
-package com.swifty.mygithub;
+package com.swifty.mygithub2;
 
 import android.app.Fragment;
 import android.content.Intent;
@@ -13,7 +13,7 @@ import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.InterstitialAd;
 import com.google.android.gms.ads.NativeExpressAdView;
-import com.swifty.mygithub.storage.Pref;
+import com.swifty.mygithub2.storage.Pref;
 
 import im.delight.android.webview.AdvancedWebView;
 
