@@ -28,12 +28,6 @@ public class WebFragment extends Fragment implements AdvancedWebView.Listener, I
     private View progress;
 
     private void initAds(View view) {
-        NativeExpressAdView adView = (NativeExpressAdView) view.findViewById(R.id.adView);
-
-        AdRequest request = new AdRequest.Builder()
-                .addTestDevice(APIClass.MEIZU_DEVICE_ID)
-                .build();
-        adView.loadAd(request);
     }
 
     @Override
@@ -112,7 +106,7 @@ public class WebFragment extends Fragment implements AdvancedWebView.Listener, I
 
     private void requestNewInterstitial() {
         AdRequest adRequest = new AdRequest.Builder()
-                .addTestDevice(APIClass.MEIZU_DEVICE_ID)
+                .addTestDevice(APIClass.XIAOMI_DEVICE_ID)
                 .build();
 
         mInterstitialAd.loadAd(adRequest);
